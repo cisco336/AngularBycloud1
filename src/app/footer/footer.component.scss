@@ -1,0 +1,8 @@
+// Variables
+$light-grey: rgb(153, 153, 153);
+
+@import url("../../styles.scss");
+a {
+  text-decoration: none;
+  color: $light-grey;
+}

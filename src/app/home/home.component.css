@@ -1,0 +1,140 @@
+@import url("../../styles.scss");
+.btn-float {
+  background-color: transparent;
+  border-radius: 100%;
+  border: 1px solid #fc9a06;
+  color: #fc9a06;
+  padding: 0.5rem 0.6rem 0.25rem 0.6rem;
+  transition: all 0.3s ease-in-out;
+}
+.btn-float:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.btn-float:hover:before {
+  content: "";
+  animation: btn-float-hover 0.3s ease-out forwards;
+}
+.btn-float:hover {
+  background-color: #fc9a06;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes btn-float-hover {
+  0% {
+    border: transparent;
+    width: 100%;
+    height: 100%;
+  }
+  50% {
+    top: -10%;
+    left: -10%;
+    border: 2px solid #fc9a06;
+    border-radius: 100%;
+    width: 120%;
+    height: 120%;
+  }
+  100% {
+    top: -50%;
+    left: -50%;
+    border: 4px solid transparent;
+    border-radius: 100%;
+    width: 200%;
+    height: 200%;
+    filter: blur(5px);
+  }
+}
+.btn-orange {
+  background-color: orange;
+  cursor: pointer;
+}
+
+.btn-orange:hover {
+  background-color: #c66c0e;
+}
+
+.btn-green {
+  background-color: #57ff3b;
+  cursor: pointer;
+}
+
+.btn-green:hover {
+  background-color: #43c42d;
+}
+
+.carousel-div {
+  position: fixed;
+  color: #fff;
+  background-color: rgba(1, 1, 1, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4.4rem;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-item {
+  max-height: 600px !important;
+}
+
+.carousel-tittle {
+  font-variant: small-caps;
+  font-size: 3rem;
+}
+
+.carousel-text {
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: justify;
+  text-shadow: 0px 0px 8px #333;
+}
+
+#contenido {
+  background: #fff;
+  /* padding: 1.5rem; */
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 0px 20px #333;
+}
+
+.img-caption {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.img-caption > img {
+  width: 100%;
+  background-color: red;
+}
+
+.service-link {
+  position: absolute;
+  bottom: 20px !important;
+  right: 35px !important;
+}
+
+@media (max-width: 630px) {
+  .carousel-text {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .carousel-tittle {
+    font-size: 1.5rem;
+  }
+}
+.service {
+  /* max-height: 600px;
+  max-width: 600px; */
+}
+
+/*# sourceMappingURL=file:///home/farleo/eclipse-workspace/NewByCloud/angular-bycloud/src/app/home/home.component.css.map */

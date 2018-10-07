@@ -1,0 +1,51 @@
+@import url("../../styles.scss");
+#web-content {
+  box-shadow: 0px 0px 20px #333;
+  margin-bottom: 1rem;
+}
+.bg-img {
+  background-image: url("../../assets/img/webdesign.jpg");
+  background-size: cover;
+  background-position:0px -50px;
+}
+.bg-img-2 {
+  background-image: url("../../assets/img/webdesign-wall.jpg");
+  background-size: cover;
+  background-attachment: local;
+  background-position: bottom;
+}
+.bg-over {
+  background: rgba(255,255,255,.7);
+}
+.bg-over-dark {
+  background: rgba(1,1,1,.7);
+}
+.fab {
+  padding: .5rem;
+}
+#go-up {
+  position: absolute;
+  z-index: 2000;
+}
+.img-overlap {
+  margin-top: -12vh;
+}
+@media (max-width: 575px){
+  #web-header {
+    margin-bottom: 1rem;
+  }
+}
+p {
+  font-size: 1rem;
+}
+@media (min-width: 576px){
+  #web-header {
+    margin-bottom: -1rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+.white {
+  background-color: rgba(255,255,255,.5);
+}
